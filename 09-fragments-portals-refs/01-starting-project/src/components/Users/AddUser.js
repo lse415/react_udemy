@@ -30,6 +30,8 @@ const AddUser = (props) => {
       return;
     }
     props.onAddUser(enteredName, enteredUserAge);
+
+    //reset the value enetered by user
     nameInputRef.current.value = "";
     ageInputRef.current.value = "";
   };
